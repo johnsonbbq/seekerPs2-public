@@ -1,0 +1,303 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quick Actions"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/brand_primary" />
+
+    <!-- Row 1: Pause/Play + Power + Reboot (icons only, centered) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="8dp">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btn_quick_pause_play"
+            style="?attr/floatingActionButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="Pause/Play"
+            app:srcCompat="@drawable/play_pause_24px"
+            android:foreground="@drawable/fab_focus_indicator"
+            android:layout_marginEnd="12dp" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btn_quick_power"
+            style="?attr/floatingActionButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="Power"
+            app:srcCompat="@drawable/ic_power"
+            app:materialThemeOverlay="@style/ThemeOverlay.Material3Expressive.FloatingActionButton.Tertiary"
+            android:foreground="@drawable/fab_focus_indicator"
+            android:layout_marginEnd="12dp" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btn_quick_reboot"
+            style="?attr/floatingActionButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="Reboot"
+            app:srcCompat="@drawable/ic_reboot"
+            app:materialThemeOverlay="@style/ThemeOverlay.Material3Expressive.FloatingActionButton.Secondary"
+            android:foreground="@drawable/fab_focus_indicator" />
+    </LinearLayout>
+
+    <!-- Row 2: Renderer toggle buttons -->
+    <com.google.android.material.button.MaterialButtonToggleGroup
+        android:id="@+id/qa_tg_renderer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        app:singleSelection="true"
+        app:selectionRequired="true">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/qa_tb_at"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="AT"
+            android:checkable="true" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/qa_tb_vk"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="VK"
+            android:checkable="true" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/qa_tb_gl"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="GL"
+            android:checkable="true" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/qa_tb_sw"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="SW"
+            android:checkable="true" />
+    </com.google.android.material.button.MaterialButtonToggleGroup>
+
+    <!-- Row 3: Games + Saves -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_quick_games"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="GAMES"
+            android:textColor="@android:color/white"
+            android:textAllCaps="true"
+            android:drawableStart="@drawable/stadia_controller_24px"
+            android:drawableTint="@color/brand_primary"
+            android:drawablePadding="8dp" />
+
+        <View
+            android:layout_width="8dp"
+            android:layout_height="0dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_quick_saves"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="SAVES"
+            android:textColor="@android:color/white"
+            android:textAllCaps="true"
+            android:drawableStart="@drawable/save_24px"
+            android:drawableTint="@color/brand_primary"
+            android:drawablePadding="8dp" />
+    </LinearLayout>
+
+    <!-- Row 3.25: Memory Cards -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_quick_memcards"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="MEMORY CARDS"
+        android:textColor="@android:color/white"
+        android:textAllCaps="true"
+        android:drawableStart="@drawable/sd_card_24px"
+        android:drawableTint="@color/brand_primary"
+        android:drawablePadding="8dp" />
+
+    <!-- Row 3.4: Achievements -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_quick_achievements"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="X"
+        android:textColor="@android:color/white"
+        android:textAllCaps="false"
+        android:drawableTint="@color/brand_primary"
+        android:drawablePadding="8dp" />
+
+    <!-- Row 3.5: Exit Game -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_quick_exit_game"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="EXIT GAME"
+        android:textColor="@android:color/white"
+        android:textAllCaps="true"
+        android:drawableStart="@drawable/exit_to_app_24px"
+        android:drawableTint="@color/brand_primary"
+        android:drawablePadding="8dp" />
+
+    <!-- Row 4: Aspect Ratio -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aspect Ratio"
+        android:textStyle="bold"
+        android:textColor="@color/brand_primary"
+        android:layout_marginBottom="4dp"/>
+
+    <Spinner
+        android:id="@+id/qa_sp_aspect_ratio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Row 5: Resolution Scale -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resolution Scale"
+        android:textStyle="bold"
+        android:textColor="@color/brand_primary"
+        android:layout_marginBottom="4dp"/>
+
+    <Spinner
+        android:id="@+id/qa_sp_resolution_scale"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Row 6: Blending Accuracy -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Blending Accuracy"
+        android:textStyle="bold"
+        android:textColor="@color/brand_primary"
+        android:layout_marginBottom="4dp"/>
+
+    <Spinner
+        android:id="@+id/qa_sp_blending_accuracy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- Row 6: Widescreen + No Interlacing -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+
+        <com.google.android.material.materialswitch.MaterialSwitch
+            android:id="@+id/qa_sw_widescreen"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Widescreen Patches"/>
+
+        <View
+            android:layout_width="8dp"
+            android:layout_height="0dp" />
+
+        <com.google.android.material.materialswitch.MaterialSwitch
+            android:id="@+id/qa_sw_no_interlacing"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="No Interlacing"/>
+    </LinearLayout>
+
+    <!-- Row 7: Textures toggles -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+
+        <com.google.android.material.materialswitch.MaterialSwitch
+            android:id="@+id/qa_sw_load_textures"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Load Textures"/>
+
+        <View
+            android:layout_width="8dp"
+            android:layout_height="0dp" />
+
+        <com.google.android.material.materialswitch.MaterialSwitch
+            android:id="@+id/qa_sw_async_textures"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Async Textures"/>
+    </LinearLayout>
+
+    <!-- Row 8: Precache textures (single) -->
+    <com.google.android.material.materialswitch.MaterialSwitch
+        android:id="@+id/qa_sw_precache_textures"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Precache Texture Replacements"
+        android:layout_marginBottom="8dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_cancel"
+        style="@style/Widget.Material3.Button.TextButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:textAllCaps="false" />
+
+    </LinearLayout>
+
+</ScrollView>

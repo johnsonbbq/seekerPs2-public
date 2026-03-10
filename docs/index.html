@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SeekerPS2 - PlayStation 2 Emulator</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0F1419;
+            color: #DFE2EA;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding: 3rem 2rem;
+            background: #1a1f2e;
+            border: 2px solid #9ECAFF;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(158, 202, 255, 0.15);
+        }
+        
+        .header h1 {
+            font-size: 3.5rem;
+            color: #9ECAFF;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+        
+        .header p {
+            color: #BFC7D4;
+            font-size: 1.2rem;
+            opacity: 0.95;
+        }
+        
+        .description {
+            background: #1a1f2e;
+            border: 1px solid #404752;
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+        }
+        
+        .description p {
+            margin-bottom: 1rem;
+            font-size: 1rem;
+            line-height: 1.8;
+            color: #DFE2EA;
+        }
+        
+        .features {
+            background: #1a1f2e;
+            border: 1px solid #404752;
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+        }
+        
+        .features h2 {
+            color: #9ECAFF;
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+        
+        .features ul {
+            list-style: none;
+            margin-left: 0;
+        }
+        
+        .features li {
+            padding: 0.75rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+            color: #DFE2EA;
+        }
+        
+        .features li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #9ECAFF;
+            font-weight: bold;
+        }
+        
+        .links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+            margin: 2rem 0;
+        }
+        
+        .link-button {
+            display: inline-block;
+            padding: 0.875rem 1.75rem;
+            background: #33A1FF;
+            color: #003258;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .link-button:hover {
+            background: #5BB3FF;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(51, 161, 255, 0.3);
+        }
+        
+        .link-button.secondary {
+            background: transparent;
+            color: #9ECAFF;
+            border: 2px solid #9ECAFF;
+        }
+        
+        .link-button.secondary:hover {
+            background: rgba(158, 202, 255, 0.1);
+            border-color: #5BB3FF;
+            color: #5BB3FF;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 2rem;
+            border-top: 1px solid #404752;
+            margin-top: 2rem;
+        }
+        
+        .footer p {
+            margin-bottom: 0.5rem;
+            color: #BFC7D4;
+        }
+        
+        .footer a {
+            color: #9ECAFF;
+            text-decoration: none;
+            margin: 0 0.5rem;
+            transition: color 0.3s;
+        }
+        
+        .footer a:hover {
+            color: #5BB3FF;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>SeekerPS2</h1>
+            <p>PlayStation 2 Emulator for Mobile</p>
+        </div>
+        
+        <div class="description">
+            <p>SeekerPS2 is a powerful PlayStation 2 emulator that brings your favorite PS2 games to mobile devices. Experience classic gaming with enhanced performance and modern convenience.</p>
+            <p>Built on the legendary PCSX2 emulator and optimized for ARM64 Android devices, SeekerPS2 delivers high compatibility and smooth gameplay.</p>
+        </div>
+        
+        <div class="features">
+            <h2>Key Features</h2>
+            <ul>
+                <li>High Compatibility - Play thousands of PS2 games</li>
+                <li>Enhanced Graphics - Upscaling, texture filtering, and modern rendering</li>
+                <li>Multiple Formats - ISO, CHD, CSO, ZSO, and compressed formats</li>
+                <li>Touch Controls - Intuitive on-screen gamepad with customizable layout</li>
+                <li>External Controllers - Full support for Bluetooth and USB gamepads</li>
+                <li>Save States - Quick save and load functionality</li>
+                <li>Game Covers - Automatic cover art downloading and display</li>
+                <li>Per-Game Settings - Individual configuration for optimal performance</li>
+            </ul>
+        </div>
+        
+        <div class="links">
+            <a href="https://github.com/johnsonbbq/seekerPs2-public" class="link-button">View on GitHub</a>
+            <a href="https://play.google.com/store/apps/details?id=com.seeker.ps2" class="link-button">Download on Play Store</a>
+            <a href="https://www.gnu.org/licenses/gpl-3.0.html" class="link-button secondary">License</a>
+            <a href="privacy-policy.html" class="link-button secondary">Privacy Policy</a>
+        </div>
+        
+        <div class="footer">
+            <p>© 2026 SeekerPS2. Licensed under GPL-3.0.</p>
+            <p>
+                <a href="https://github.com/johnsonbbq/seekerPs2-public">GitHub</a> |
+                <a href="mailto:contact-removed@example.invalid">Contact</a>
+            </p>
+            <p style="margin-top: 1rem; opacity: 0.7; font-size: 0.9rem;">PlayStation and PlayStation 2 are trademarks of Sony Interactive Entertainment.</p>
+        </div>
+    </div>
+</body>
+</html>

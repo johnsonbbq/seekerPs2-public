@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:theme="@style/ThemeOverlay.Material3.MaterialAlertDialog"
+    android:fillViewport="true"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Game Title -->
+        <TextView
+            android:id="@+id/tv_game_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Game Title"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:layout_marginBottom="4dp"/>
+
+        <!-- Subtitle -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Per-Game Settings (Long-press from game list)"
+            android:textSize="12sp"
+            android:textColor="@color/md_theme_tertiaryFixedDim"
+            android:layout_marginBottom="4dp"/>
+
+        <!-- Game Serial/CRC -->
+        <TextView
+            android:id="@+id/tv_game_serial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Serial: SLUS-12345 | CRC: 12345678"
+            android:textSize="12sp"
+            android:textColor="@color/md_theme_tertiaryFixedDim"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="These settings will override global settings for this game only."
+            android:textSize="14sp"
+            android:textColor="@color/md_theme_tertiaryFixedDim"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Cover art management -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cover Art"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/brand_primary"
+            android:paddingBottom="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Set, replace, or remove the cover shown in the game grid."
+            android:textSize="12sp"
+            android:textColor="@color/md_theme_tertiaryFixedDim"
+            android:layout_marginBottom="8dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_set_custom_cover"
+            style="@style/SeekerPS2.ElevatedTransparentButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Manage Custom Cover"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="16dp"
+            app:icon="@drawable/image_24px"
+            app:iconGravity="textStart"
+            app:iconPadding="12dp"
+            app:iconTint="@android:color/white" />
+
+        <!-- Graphics Settings -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Graphics"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/brand_primary"
+            android:paddingBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aspect Ratio"
+            android:textSize="14sp"
+            android:textColor="@color/brand_primary"
+            android:paddingBottom="4dp"/>
+
+        <Spinner
+            android:id="@+id/sp_aspect_ratio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Blending Accuracy"
+            android:textSize="14sp"
+            android:textColor="@color/brand_primary"
+            android:paddingBottom="4dp"/>
+
+        <Spinner
+            android:id="@+id/sp_blending_accuracy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Renderer"
+            android:textSize="14sp"
+            android:textColor="@color/brand_primary"
+            android:paddingBottom="4dp"/>
+
+        <Spinner
+            android:id="@+id/sp_renderer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resolution"
+            android:textSize="14sp"
+            android:textColor="@color/brand_primary"
+            android:paddingBottom="4dp"/>
+
+        <Spinner
+            android:id="@+id/sp_resolution"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Game Patches -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Game Patches"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/brand_primary"
+            android:paddingBottom="8dp"/>
+
+        <com.google.android.material.materialswitch.MaterialSwitch
+            android:id="@+id/sw_widescreen_patches"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Widescreen Patches"
+            android:textColor="@android:color/white"
+            style="@style/Widget.Material3.CompoundButton.MaterialSwitch"
+            android:layout_marginBottom="8dp"/>
+
+        <com.google.android.material.materialswitch.MaterialSwitch
+            android:id="@+id/sw_no_interlacing_patches"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Interlacing Patches"
+            android:textColor="@android:color/white"
+            style="@style/Widget.Material3.CompoundButton.MaterialSwitch"
+            android:layout_marginBottom="8dp"/>
+
+        <com.google.android.material.materialswitch.MaterialSwitch
+            android:id="@+id/sw_enable_patch_codes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enable Patch Codes (PNACH)"
+            style="@style/Widget.Material3.CompoundButton.MaterialSwitch"
+            android:layout_marginBottom="8dp"
+            android:visibility="gone"/>
+
+        
+        <com.google.android.material.materialswitch.MaterialSwitch
+            android:id="@+id/sw_enable_cheats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enable Cheats"
+            android:textColor="@android:color/white"
+            style="@style/Widget.Material3.CompoundButton.MaterialSwitch"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Per-game Texture Packs -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Texture Packs"
+            android:textSize="14sp"
+            android:textColor="@color/brand_primary"
+            android:paddingBottom="4dp"/>
+
+        <com.google.android.material.materialswitch.MaterialSwitch
+            android:id="@+id/sw_load_textures_per_game"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Load Texture Replacements"
+            android:textColor="@android:color/white"
+            style="@style/Widget.Material3.CompoundButton.MaterialSwitch"
+            android:layout_marginBottom="8dp"/>
+
+        <com.google.android.material.materialswitch.MaterialSwitch
+            android:id="@+id/sw_async_texture_loading_per_game"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Async Texture Loading"
+            android:textColor="@android:color/white"
+            style="@style/Widget.Material3.CompoundButton.MaterialSwitch"
+            android:layout_marginBottom="16dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_import_pnach"
+            style="@style/SeekerPS2.ElevatedTransparentButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Import Cheats / Patch Codes (.pnach)" />
+
+    </LinearLayout>
+
+</ScrollView>
