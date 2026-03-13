@@ -54,35 +54,7 @@ Users must provide:
 
 Supported game container formats include `ISO`, `CHD`, `CSO`, `ZSO`, `BIN/CUE`, and several related disc image formats.
 
-## License
 
-This project is released under the [GNU General Public License v3.0](LICENSE).
-
-That means, in general:
-- You may use, study, modify, and redistribute the code
-- Derivative distributions must remain under GPL-compatible terms where required
-- Source availability obligations apply when you distribute modified versions
-
-Please read the full GPL text before redistributing builds or forks.
-
-## Copyright
-
-Copyright © 2026 SeekerPS2 Developers.
-
-Additional upstream and third-party components remain the property of their respective authors and rightsholders.
-
-PlayStation and PlayStation 2 are trademarks of Sony Interactive Entertainment. This project is not affiliated with, endorsed by, or sponsored by Sony Interactive Entertainment.
-
-## Privacy
-
-The public source tree is intended to run locally on the user device and does not ship with account login, advertising SDKs, or telemetry/analytics code added by this project.
-
-Important privacy notes:
-- The app may access local storage that the user selects for BIOS files, save data, screenshots, and game directories
-- Optional network features, if enabled by the user, communicate directly with their configured endpoints or bundled external sources
-- This repository does not include any backend service that collects personal profiles or account data from users
-
-For the project privacy statement used by the app/docs, see [docs/privacy-policy.md](docs/privacy-policy.md).
 
 ## Legal Notice
 
