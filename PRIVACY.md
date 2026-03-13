@@ -1,29 +1,55 @@
-# Privacy
+# Privacy Policy
 
-## Overview
+Last updated: March 13, 2026
 
-SeekerPS2 is designed to run primarily on the user device. The public project does not require user account registration and does not include advertising SDKs or project-added analytics/telemetry components in this repository.
+SeekerPS2 ("the app", "we", "our", or "us") respects your privacy. This Privacy Policy explains how information is handled when you use SeekerPS2.
 
-## Data Handling
+## Information We Collect
 
-The app may read or write data that the user explicitly chooses or generates, including:
-- BIOS directories selected by the user
-- Game library paths selected by the user
-- Save data, save states, screenshots, and related local files
+SeekerPS2 is designed to minimize data collection and operate primarily on the user device.
+
+Depending on how the app is used, the app may process limited information such as:
+
+- Local file paths selected by the user for BIOS, games, saves, or screenshots
 - App settings stored on the device
+- Basic device or runtime information required for app functionality and stability
 
-## Network Access
-
-Some optional features may access external resources directly, depending on user actions and app configuration. Those requests are made to the relevant external endpoints rather than to a SeekerPS2-operated backend included in this repository.
-
-## Personal Information
-
-This public project is not intended to collect, profile, sell, or centrally store personal user data through a bundled SeekerPS2 backend service.
+We do **not intentionally collect personally identifiable information** such as:
+- Name
+- Email address
+- Phone number
+- Exact location
 
 ## Third-Party Services
 
-If users choose to interact with external platforms, stores, repositories, or content sources, those services operate under their own terms and privacy policies.
+SeekerPS2 may access third-party services or public resources for optional features, depending on how the app is configured and used.
 
-## User Responsibility
+These services operate under their own privacy policies and terms.
 
-Users are responsible for securing their own device, storage, backups, and any files they choose to load into the app.
+## How We Use Information
+
+Any information processed by the app may be used to:
+
+- Load and manage local game data
+- Save settings and user-generated files
+- Improve app stability and compatibility
+- Support core app functionality
+
+## Data Security
+
+SeekerPS2 is intended to store and process most data locally on the user's device. Users are responsible for protecting their device, storage, and backups.
+
+## Children's Privacy
+
+SeekerPS2 is not specifically directed toward children under the age of 13. We do not knowingly collect personal information from children.
+
+## Changes to This Privacy Policy
+
+We may update this Privacy Policy from time to time. Changes may be posted in the project repository or related project documentation.
+
+## Contact
+
+If you have questions about this Privacy Policy, please use the repository issue tracker:
+
+Project: SeekerPS2  
+GitHub: https://github.com/johnsonbbq/seekerPs2-public

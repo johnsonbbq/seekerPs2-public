@@ -1,23 +1,29 @@
-# Copyright
+# Copyright Notice
 
-Copyright © 2026 SeekerPS2 Developers.
+© 2026 SeekerPS2. All rights reserved.
 
-## Project Code
+SeekerPS2 and its project-specific design, branding, and related materials are the intellectual property of the SeekerPS2 developers unless otherwise stated.
 
-Unless otherwise noted, original SeekerPS2 project modifications and project-specific presentation assets in this repository are distributed by the SeekerPS2 Developers under the repository license terms.
+## Third-Party Content
 
-## Third-Party Components
+SeekerPS2 does not claim ownership of any PlayStation 2 BIOS, game software, disc image, ROM, or other third-party content used with the application.
 
-This repository also contains third-party and upstream open-source components. Copyright for those components remains with their respective authors and rightsholders.
+All such content belongs to its respective owners and rightsholders, including but not limited to:
 
-## Excluded Content
+- Sony Interactive Entertainment
+- Game publishers
+- Content creators and other rights holders
 
-SeekerPS2 does not include PlayStation 2 BIOS files, commercial game ROMs, or disc images.
+SeekerPS2 functions only as a software interface for emulation-related use.
 
 ## Trademarks
 
-PlayStation and PlayStation 2 are trademarks of Sony Interactive Entertainment. All other trademarks, logos, and brand names remain the property of their respective owners.
+"PlayStation" and "PlayStation 2" and related trademarks are the property of Sony Interactive Entertainment. SeekerPS2 is not affiliated with, endorsed by, or sponsored by Sony Interactive Entertainment.
 
-## User Responsibility
+## Content Responsibility
 
-Users are responsible for ensuring they have the legal right to use any BIOS files, game backups, patches, or other content they load with the software.
+Users are responsible for ensuring that their use of the application complies with applicable copyright laws and the rights associated with any BIOS files, games, patches, or other content they choose to use.
+
+## Reporting Copyright Issues
+
+If you believe copyrighted material has been referenced or used improperly in connection with this project, please contact the project maintainers through the repository issue tracker with relevant details.

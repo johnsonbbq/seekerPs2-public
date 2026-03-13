@@ -1,23 +1,18 @@
-# License
+# License Notice
 
-SeekerPS2 is distributed under the GNU General Public License v3.0.
+GNU General Public License v3.0
 
-## Canonical License Text
+Copyright (c) 2026 SeekerPS2 Developers
 
-For the full legal license text, see:
-- [LICENSE](LICENSE)
-- [gpl-3.0.md](gpl-3.0.md)
+SeekerPS2 is distributed under the GNU General Public License version 3.0 (GPL v3).
 
-## Summary
+Permission is granted to use, study, modify, and redistribute this software under the terms of GPL v3.
 
-Under GPL v3.0, you may generally:
-- Use the software
-- Study the source code
-- Modify the source code
-- Share copies of the software and your modifications
+If you distribute modified versions of the software, you are responsible for complying with the obligations of GPL v3, including the applicable source-availability requirements.
 
-If you distribute modified versions, you are responsible for complying with the obligations of GPL v3.0, including the source-availability requirements that apply to your distribution.
+The full legal license text for this project is provided in:
 
-## Third-Party Notices
+- LICENSE
+- gpl-3.0.md
 
-Some files and components in this repository originate from third-party open-source software. Those components remain subject to their own copyright notices and applicable license terms where provided.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT ANY WARRANTY TO THE EXTENT PERMITTED BY APPLICABLE LAW. SEE THE FULL GPL v3 TEXT FOR COMPLETE TERMS, CONDITIONS, AND LIMITATIONS.
