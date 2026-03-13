@@ -54,7 +54,12 @@ Users must provide:
 
 Supported game container formats include `ISO`, `CHD`, `CSO`, `ZSO`, `BIN/CUE`, and several related disc image formats.
 
+## Legal Pages
 
+- [Privacy Policy](privacy-policy.md)
+- [Terms and Conditions](terms-and-conditions.md)
+- [Copyright Notice](COPYRIGHT.md)
+- [License Notice](LICENSE.md)
 
 ## Legal Notice
 
